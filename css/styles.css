@@ -15,23 +15,63 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.header .container {
-  display: flex;
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
   list-style: none;
+  margin-left: auto;
 }
 
 body {
   font-family: var(--main-font);
   background-color: var(--basic-color);
 }
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation,
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.int-space:not(:last-child) {
+  margin-right: 50px;
+}
 .logo-header {
+  display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -39,6 +79,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 .logo-header > span {
   color: var(--accent-color);
@@ -72,6 +113,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  margin-left: auto;
+  margin-right: 40px;
 }
 
 .list .contact-links:hover,
@@ -132,6 +175,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.sub-img-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
 .subtitle {
   color: var(--title-color);
   font-weight: 700;
@@ -139,10 +188,17 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team {
   background-color: var(--bc-color-light);
+}
+
+.team-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 50px;
 }
 
 .names {
@@ -163,11 +219,17 @@ body {
   color: var(--text-color);
 }
 
+/*footer*/
+
 .footer {
   background-color: var(--bg-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -191,6 +253,8 @@ body {
 }
 
 .contact-footer {
+  display: block;
+  margin-top: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
